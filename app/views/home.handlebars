@@ -13,7 +13,7 @@
     <p>{{count}} people already signed</p>
     <ul class="avatars">
         {{#each profiles}}
-            <li class="avatar" style="background-image: url('{{picture}}')" data-tooltip="{{displayName}} ({{ago}})"></li>
+        <li class="avatar" style="background-image: url('{{picture}}')" data-tooltip="{{displayName}} signed {{ago}}"></li>
         {{/each}}
     </ul>
 </div>

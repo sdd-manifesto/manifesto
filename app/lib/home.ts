@@ -41,7 +41,7 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
     const sigs = db.collection("signatures");
 
     const count = await sigs.countDocuments({ signed: true });
-    const profiles = await sigs.find({ signed: true }).sort({ ts: -1 }).limit(50).toArray();
+    const profiles = await sigs.find({ signed: true }).sort({ ts: -1 }).limit(66).toArray();
     profiles.forEach(p => {
         p.ago = moment(p.ts).fromNow();
     });
