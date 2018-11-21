@@ -23,24 +23,6 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
     const sigs = db.collection("signatures");
 
     const count = await sigs.countDocuments({ signed: true });
-    const profiles = await sigs.find({ signed: true }).sort({ ts: -1 }).limit(50).toArray();
-    profiles.forEach(p => {
-        p.ago = moment(p.ts).fromNow();
-    });
-    const message = req.flash("info");
-
-    const sha = GitInfo.sha.slice(0, 7);
-    const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
-
-    res.render("home", { profiles, count, html: manifesto, message, sha, date });
-});
-
-homeRouter.get("/", async (req: express.Request, res: express.Response) => {
-
-    const db = await database();
-    const sigs = db.collection("signatures");
-
-    const count = await sigs.countDocuments({ signed: true });
     const profiles = await sigs.find({ signed: true }).sort({ ts: -1 }).limit(66).toArray();
     profiles.forEach(p => {
         p.ago = moment(p.ts).fromNow();
