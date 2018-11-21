@@ -22,7 +22,7 @@ We collect and use your personal data for the purposes described below and on th
 
 * _For the performance of our agreement with you_ - We collect personal data for the purpose of identifying and communicating with you and to respond to your requests or inquiries.
 * _For our legitimate interests as a business when those interests are not overridden by your interests, fundamental rights or freedoms_ - Our legitimate interests to analyze visits to and use of the Sites to improve and develop our Services as well as to understand our customers both on aggregated and on individual basis. This also means that we analyze your use of Services and use this information to improve our Services and to give you a better experience (e.g. we analyze what webpages you visit, which Services you use and like and how you use these Services, which enables us to create personal profiles and to assess what may be interesting to you, which recommendations we can give you when you purchase our Services). Creating such personal profiles of our customers, enables us to send you marketing materials that directly relate to your use of Services, if you have chosen to receive such materials. With respect to our customers who purchased one of our Services, we may send marketing material regarding similar Services. We may also enrich your personal data to ensure the security of our Services; to prevent fraud, hacking, cheats and spamming; and to facilitate our response to legal processes (e.g., a court order, warrant or subpoena).
-* _Based on your consent_ - We use your personal data based on your consent when you sign up to receiving our newsletters, marketing or promotion material and other information that may be of interest to you through our Sites or otherwise expressly consent to the use of your personal data. You can withdraw your consent at any time by sending an email to [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org) or by opting-out by following the opt-out instructions in the relevant marketing communication.
+* _Based on your consent_ - We use your personal data based on your consent when you sign up to receiving our newsletters, marketing or promotion material and other information that may be of interest to you through our Sites or otherwise expressly consent to the use of your personal data. You can withdraw your consent at any time by sending an email to [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io) or by opting-out by following the opt-out instructions in the relevant marketing communication.
 
 ## Who We Share Your Personal Data With
 
@@ -62,7 +62,7 @@ Where we are legally required to do so, transfers of personal data to parties ou
 
 ## Your Rights
 
-We will take steps in accordance with applicable legislation to keep your personal data accurate, complete and up-to-date. You are entitled to have any inadequate, incomplete or incorrect personal data corrected (that is, rectified). You also have the right to request access to your personal data and to obtain a copy of it as well as additional information about the processing and to request us to erase the personal data we hold about you. In cases where we rely on your consent for using your personal data, you can withdraw such consent at any time by sending an email to: [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org)
+We will take steps in accordance with applicable legislation to keep your personal data accurate, complete and up-to-date. You are entitled to have any inadequate, incomplete or incorrect personal data corrected (that is, rectified). You also have the right to request access to your personal data and to obtain a copy of it as well as additional information about the processing and to request us to erase the personal data we hold about you. In cases where we rely on your consent for using your personal data, you can withdraw such consent at any time by sending an email to: [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io)
 
 The following rights apply in addition to the above to European residents:
 
@@ -70,10 +70,10 @@ The following rights apply in addition to the above to European residents:
 * Right to object: you have the right to object to our processing of your personal data which is based on our legitimate interests. We will no longer process your personal data upon your request, unless we have compelling legitimate grounds for the continuation of the processing which override your interests, rights and freedoms, or for the establishment, exercise or defence of legal claims. You may also object to our use of your data for direct marketing purposes. To that end, you may also use the unsubscribe button provided for in every email we send.
 * Right to data portability: under circumstances, you have the right to have your personal data transmitted to another data controller in a structured, commonly used and machine-readable format.
 Right to obtain a copy of personal data safeguards used for transfers outside your location: you can ask to obtain a copy of, or reference to, the safeguards under which your personal data is transferred outside of the European Union. We may redact data transfer agreements to protect commercial terms.
-* Right to lodge a complaint: in case you have a question or complaint about how we process your personal data, you can send an email to [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org). It is also a possibility to lodge a complaint with a supervisory data protection authority.
+* Right to lodge a complaint: in case you have a question or complaint about how we process your personal data, you can send an email to [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io). It is also a possibility to lodge a complaint with a supervisory data protection authority.
 * If you reside in France, you also have the right to issue directives relating to your digital legacy.
 
-For further information regarding your rights, or to exercise any of your rights, please contact us at [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org) or see section ‘How you can contact us’ for more details. We may ask you for additional information to confirm your identity and for security purposes, before disclosing the personal data requested to you. We reserve the right to charge a fee where permitted by law, for instance if your request is manifestly unfounded or excessive.
+For further information regarding your rights, or to exercise any of your rights, please contact us at [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io) or see section ‘How you can contact us’ for more details. We may ask you for additional information to confirm your identity and for security purposes, before disclosing the personal data requested to you. We reserve the right to charge a fee where permitted by law, for instance if your request is manifestly unfounded or excessive.
 
 Subject to legal and other permissible considerations, we will make every reasonable effort to honour your request promptly or inform you if we require further information in order to fulfil your request.
 
@@ -89,11 +89,11 @@ If you are a Canadian resident we have the right to send you commercial electron
 * You have a business relations with us.
 * A third-party with whom you may have an existing relationship has referred us to you.
 
-In the event you no longer wish to receive CEM's from us, email us at [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org) or reply to the electronic message / email address sent to you with the word "Unsubscribe", you may also use the unsubscribe button provided for in every email we send. Our CEM's also contain information on how to unsubscribe from receiving CEM's. Your request will be processed as soon as possible, and no later than ten (10) days after you send the request.
+In the event you no longer wish to receive CEM's from us, email us at [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io) or reply to the electronic message / email address sent to you with the word "Unsubscribe", you may also use the unsubscribe button provided for in every email we send. Our CEM's also contain information on how to unsubscribe from receiving CEM's. Your request will be processed as soon as possible, and no later than ten (10) days after you send the request.
 
 ## How You Can Contact Us
 
-If you have any questions or concerns about this Privacy Policy or if you would like to make a complaint about a possible breach of local privacy laws, please contact us at [privacy@sdd-manifesto.org](mailto:privacy@sdd-manifesto.org).
+If you have any questions or concerns about this Privacy Policy or if you would like to make a complaint about a possible breach of local privacy laws, please contact us at [privacy@sdd-manifesto.io](mailto:privacy@sdd-manifesto.io).
 
 ## Links To Other Websites
 
