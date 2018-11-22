@@ -72,7 +72,7 @@
     "no-conditional-assignment": true,
     "no-consecutive-blank-lines": true,
     "no-console": {
-      "severity": "warning",
+      "severity": "none",
       "options": ["debug", "error", "info", "log", "warn"]
     },
     "no-construct": true,
