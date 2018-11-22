@@ -34,7 +34,7 @@ Delivery infrastructure is now programmable, and we will program it.
 
 **Observable:** Common means to observe and troubleshoot  what happens in the delivery process as a production system.
 -   **Trace:** Observe activity in a system and trace the relationships between actions.
--   **Debug:** Interact with and inspect and a delivery flow.
+-   **Debug:** Interact with and inspect a delivery flow.
 -   **Metrics:** Derive metrics from activity across the entire delivery flow.
 
 **Authors:** (alphabetical by last name): Kenny Bastani, Marc Holmes, Rod Johnson, Jessica Kerr, Mik Kersten, Russ Miles, Erin Schnabel, Matt Stine. With the help and refinement of many members in the community.
