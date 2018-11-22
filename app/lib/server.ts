@@ -8,6 +8,7 @@ import * as auth0 from "passport-auth0";
 import * as path from "path";
 import { authRouter } from "./auth";
 import { homeRouter } from "./home";
+import { policyRouter } from "./policy";
 
 export const exp = express();
 
@@ -82,6 +83,7 @@ exp.use((req, res, next) => {
 });
 exp.use("/", authRouter);
 exp.use("/", homeRouter);
+exp.use("/", policyRouter);
 
 exp.use((req, res, next) => {
     const err = new Error("Not Found");
