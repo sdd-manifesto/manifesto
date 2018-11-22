@@ -1,0 +1,23 @@
+footer.footer {
+	background-color: $brand-primary;
+	color: #9CA3C3;
+	font-size: rem-calc(14px);
+	padding: 40px 30px 60px 30px;
+	text-align: center;
+
+	@media (#{$larger-than-tablet}) {
+		text-align: left;
+	}
+
+	a {
+		color: #9CA3C3;
+	}
+
+	.footer-links {
+		text-align: center;
+
+		@media (#{$larger-than-tablet}) {
+			text-align: right;
+		}
+	}
+}

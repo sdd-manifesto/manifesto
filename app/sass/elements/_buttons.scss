@@ -1,0 +1,134 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Styles for Buttons - Managed in /sass/snippets/_buttons.scss
+
+.button {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: $button-radius;
+  color: $button-text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $secondary-font-family;
+  letter-spacing: $button-letter-spacing;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  outline: none;
+  padding: $button-padding;
+  text-align: center;
+  text-decoration: none;
+  text-transform: $button-text-transform;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  a {
+    font-family: $base-font-family;
+    color: $button-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus { outline: 0; }
+  }
+
+  @include button-theme($font-color);
+
+  &.primary {
+    @include button-theme($brand-primary);
+  }
+
+  &.secondary {
+    @include button-theme($brand-secondary);
+  }
+
+  &.success {
+    @include button-theme($success);
+  }
+
+  &.warning {
+    @include button-theme($warning);
+  }
+
+  &.danger {
+    color: white;
+    @include button-theme($danger);
+  }
+
+  &.disabled {
+    @include button-theme($gray-300);
+    color: $gray-700;
+  }
+
+  &.large {
+    font-size: rem-calc(16px);
+    padding: 20px 40px;
+    font-weight: 400;
+  }
+
+  &.small {
+    padding: 15px 20px;
+    font-size: 12px;
+    height: auto;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  &.extra-small {
+    padding: 5px 10px;
+    font-size: 10px;
+    height: auto;
+    line-height: 1.5;
+  }
+
+}
+
+input {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    background-color: $brand-primary;
+    background-image: none;
+    border: 1px solid transparent;
+    color: $button-text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $secondary-font-family;
+    font-size: rem-calc(16px);
+    letter-spacing: $button-letter-spacing;
+    line-height: 1;
+    margin-bottom: 20px;
+    outline: none;
+    padding: $button-padding;
+    text-align: center;
+    text-transform: $button-text-transform;
+    transition: all 0.2s ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+}
+
+input {
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    background-color: $brand-primary;
+    outline: 0;
+  }
+}
+
+input {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus {
+    outline: 0;
+  }
+}

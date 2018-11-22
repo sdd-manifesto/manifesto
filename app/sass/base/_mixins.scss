@@ -1,0 +1,37 @@
+@function rem-calc($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin font-size($size) {
+  font-size: rem-calc($size);
+}
+
+@mixin button-theme($button-color) {
+
+  border-color: transparent;
+  background-color: $button-color;
+
+  &:hover {
+     background-color: shade($button-color, 20%);
+  }
+
+  &:active {
+     background-color: shade($button-color, 20%);
+  }
+
+}
+
+@mixin alert-theme($alert-color) {
+  background-color: rgba($alert-color, 0.13);
+  border: 1px solid $alert-color;
+  color: $alert-color;
+}

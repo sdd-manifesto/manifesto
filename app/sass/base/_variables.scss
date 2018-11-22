@@ -1,0 +1,72 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$larger-than-mobilexs		: "min-width: 360px" !default;
+$larger-than-mobile			: "min-width: 400px" !default;
+$larger-than-phablet		: "min-width: 550px" !default;
+$larger-than-tablet			: "min-width: 770px" !default;
+$larger-than-desktop		: "min-width: 1025px" !default;
+$larger-than-desktophd	: "min-width: 1400px" !default;
+
+// THEME COLOR VARIABLES
+$white:			#fff !default;
+$gray-100:	#F8F8F8 !default;
+$gray-200:	#F1F1F1 !default;
+$gray-300:	#E2E2E2 !default;
+$gray-400:	#C7C7C7 !default;
+$gray-500:	#B3B3B3 !default;
+$gray-600:	#979797 !default;
+$gray-700:	#757575 !default;
+$gray-800:	#5E5E5E !default;
+$gray-900:	#3F3F3F !default;
+$black:			#2d2d2d !default;
+
+$brand-primary: #233173 !default;
+$brand-secondary: #164d7c !default;
+
+$success: #2bbf60 !default;
+$warning: #f3a533 !default;
+$danger: #f35a4e !default;
+$red: #AF2536 !default;
+
+// ELEMENT COLOR VARIABLES
+$body-background : #fafafa !default;
+$border-color: $gray-400 !default;
+$link-color: $brand-primary !default;
+$font-color: $gray-900 !default;
+
+// Typography
+$base-font-family: 'expo-serif-pro', serif !default;
+$secondary-font-family: 'lexia', serif !default;
+
+// OVERALL THEME VARIABLES
+// Things like how rounded things are, base font size, line height, borders, etc.
+$global-radius: 0px !default;
+
+// FORM VARIABLES
+$input-border: 1px solid $border-color;
+$input-border-focus: 2px solid $brand-primary;
+$input-height: 50px;
+$input-padding: 15px;
+$label-color: $gray-600;
+$label-font-size: rem-calc(14px);
+$label-font-weight: 400;
+$label-letter-spacing: -0.2px;
+$label-text-transform: none;
+
+// BUTTON VARIABLES
+$button-font-size: rem-calc(18px);
+$button-letter-spacing: 0px;
+$button-padding: 15px 30px;
+$button-radius: 3px;
+$button-text-color: $white;
+$button-text-transform: none;
+
+// GRID VARIABLES
+$container-width: 1440px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
