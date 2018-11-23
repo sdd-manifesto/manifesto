@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 -   Move login buttons to manifesto side. [#5](https://github.com/sdd-manifesto/manifesto/issues/5)
 -   Acknowledge prior art. [#6](https://github.com/sdd-manifesto/manifesto/issues/6)
 
+### Changed
+
+-   Delete reference to 70s era scripting. [#4](https://github.com/sdd-manifesto/manifesto/issues/4)
+
 ### Fixed
 
 -   Typo in 'observable':'debug' section. [#2](https://github.com/sdd-manifesto/manifesto/issues/2)
