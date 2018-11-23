@@ -92,7 +92,7 @@
     "compile:ts": "tsc --project .",
     "lint": "tslint --config tslint.json --format verbose --project .",
     "lint:fix": "npm run lint -- --fix",
-    "postinstall": "npm run build",
+    "heroku-postbuild": "npm run build",
     "start": "node app/index.js"
   },
   "engines": {
