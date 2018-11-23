@@ -1,6 +1,6 @@
 {
   "name": "@sdd-manifesto/manifesto",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "description": "The Software Defined Delivery Manifesto",
   "author": {
     "name": "The Software Defined Delivery Manifesto",
@@ -38,12 +38,12 @@
     "@types/morgan": "^1.7.35",
     "@types/passport": "^0.4.7",
     "@types/passport-auth0": "^1.0.2",
+    "@types/semver": "^5.5.0",
     "@types/showdown": "^1.7.5",
     "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "dateformat": "^3.0.3",
     "debug": "~2.6.9",
-    "dotenv": "^6.1.0",
     "express": "~4.16.0",
     "express-handlebars": "^3.0.0",
     "express-http-to-https": "^1.1.4",
@@ -56,6 +56,8 @@
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-auth0": "^1.1.0",
+    "remote-git-tags": "^2.0.0",
+    "semver": "^5.6.0",
     "showdown": "^1.9.0",
     "source-map-support": "^0.5.9"
   },
