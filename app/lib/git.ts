@@ -17,7 +17,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
     const sha = process.env.HEROKU_SLUG_COMMIT;
 
     try {
-        const tag = await api.git.getTag({
+        const tag = await (api as any).gitdata.getTag({
             tag_sha: sha,
             ...repo,
         });
@@ -27,6 +27,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
             date: tag.data.tagger.date,
         };
     } catch (err) {
+        console.error(err)
         // Ignore as it simply means we got no tag on the sha
     }
 
