@@ -1,4 +1,6 @@
 import * as GitHubApi from "@octokit/rest";
+import * as remoteGitTags from "remote-git-tags";
+import * as semver from "semver";
 
 /**
  * Load sha and commit date from repo to present on the UI
@@ -15,20 +17,20 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
         repo: "manifesto",
     };
     const sha = process.env.HEROKU_SLUG_COMMIT;
+    let version = sha.slice(0, 7);
 
     try {
-        const tag = await (api as any).gitdata.getTag({
-            tag_sha: sha,
-            ...repo,
-        });
-
-        return {
-            version: tag.data.tag,
-            date: tag.data.tagger.date,
-        };
+        const tags: Map<string, string> = await remoteGitTags(`github.com/${repo.owner}/${repo.repo}`);
+        for (const tag of tags.entries()) {
+            if (tag[1] === sha) {
+                const t = semver.parse(tag[0]);
+                if (t.prerelease.length === 0) {
+                    version = tag[0];
+                }
+            }
+        }
     } catch (err) {
-        console.error(err);
-        // Ignore as it simply means we got no tag on the sha
+        // Ignore as it simply means we got no tags
     }
 
     try {
@@ -38,7 +40,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
         });
 
         return {
-            version: commit.data.sha.slice(0, 7),
+            version,
             date: commit.data.commit.committer.date,
         };
     } catch (err) {

@@ -1,1 +1,1 @@
-declare module "git-repo-info";
+declare module "remote-git-tags";
