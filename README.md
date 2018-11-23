@@ -10,6 +10,8 @@ We accelerate our automation the same way we accelerate application development:
 
 Delivery infrastructure is now programmable, and we will program it.
 
+We recognize prior art. This is not a work of invention but of articulation, of a timely and badly needed approach.
+
 ## Software Defined Delivery is:
 
 **Core:** Delivery is a fundamental and strategic capability for every software team and organization.
