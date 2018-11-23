@@ -8,9 +8,11 @@ The work of delivery is inherently unique. Each combination of application, orga
 
 We accelerate our automation the same way we accelerate application development: with modern architecture and programming languages plus frameworks, libraries, and services for generic capabilities. 
 
+
+We recognize prior art. This is not a work of invention but of articulation, of a timely and much needed approach.
+
 Delivery infrastructure is now programmable, and we will program it.
 
-We recognize prior art. This is not a work of invention but of articulation, of a timely and badly needed approach.
 
 ## Software Defined Delivery is:
 
