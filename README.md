@@ -17,7 +17,7 @@ Delivery infrastructure is now programmable, and we will program it.
 -   **Strategic:** Decide policy at the team and organization level; implement it with precision, without toil, in code.
 -   **Evolving:** As we learn, we continually improve our delivery.
 
-**Engineered:** In robust, testable code. 70s-era scripting languages are insufficient.
+**Engineered:** In robust, testable code.
 -   **Modern software architecture:** Event-driven and extensible.
 -   **Modern programming languages:** Logic is best specified in code, not pictures or GUIs. Scripts don’t scale.
 -   **Model-based:** Backed by a model of the software domain, with understanding of code.
