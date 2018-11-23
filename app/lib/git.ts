@@ -27,7 +27,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
             date: tag.data.tagger.date,
         };
     } catch (err) {
-        console.error(err)
+        console.error(err);
         // Ignore as it simply means we got no tag on the sha
     }
 

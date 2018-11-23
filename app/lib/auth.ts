@@ -18,7 +18,10 @@ authRouter.get("/callback", (req, res, next) => {
             return next(err);
         }
         if (!user) {
-            return res.redirect("/sign");
+            return res.redirect("/");
+        }
+        if (req.session.state !== req.query.state) {
+            return res.redirect("/");
         }
 
         const db = await database();

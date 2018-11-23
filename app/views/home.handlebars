@@ -44,7 +44,12 @@
             responseType: "code",
             params: {
                 scope: "openid email profile",
+                state: "{{state}}",
             },
+        },
+        overrides: {
+            __tenant: "sdd-manifesto",
+            __token_issuer: "https://{{auth0.domain}}.org/",
         },
         theme: {
             logo: 'https://sdd-manifesto.org/img/sdd_seal_150x150.jpg',

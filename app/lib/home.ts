@@ -28,6 +28,18 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
 
     const version = GitInfo.version;
     const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
+    const state = nonce();
 
-    res.render("home", { profiles, count, html: manifesto, message, version, date, auth0: Auth0Config });
+    req.session.state = state;
+
+    res.render("home", { profiles, count, html: manifesto, message, version, date, auth0: Auth0Config, state });
 });
+
+function nonce(length: number = 40): string {
+    let text = "";
+    const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for (let i = 0; i < length; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
+}
