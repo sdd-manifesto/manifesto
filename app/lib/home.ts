@@ -5,6 +5,7 @@ import * as moment from "moment";
 import * as path from "path";
 import * as showdown from "showdown";
 import { GitInfo } from "../index";
+import { Auth0Config } from "./auth";
 import { database } from "./mongo";
 
 const converter = new showdown.Converter();
@@ -25,8 +26,8 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
     });
     const message = req.flash("info");
 
-    const sha = GitInfo.sha.slice(0, 7);
+    const version = GitInfo.version;
     const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
 
-    res.render("home", { profiles, count, html: manifesto, message, sha, date });
+    res.render("home", { profiles, count, html: manifesto, message, version, date, auth0: Auth0Config });
 });

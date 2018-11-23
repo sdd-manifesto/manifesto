@@ -6,7 +6,7 @@ import { gitInfo } from "./lib/git";
 import { client } from "./lib/mongo";
 import { exp } from "./lib/server";
 
-export let GitInfo: { sha?: string, date?: string } = {};
+export let GitInfo: { version?: string, date?: string } = {};
 
 async function main(): Promise<void> {
     GitInfo = await gitInfo();

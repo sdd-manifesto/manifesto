@@ -6,7 +6,10 @@ import * as logger from "morgan";
 import * as passport from "passport";
 import * as auth0 from "passport-auth0";
 import * as path from "path";
-import { authRouter } from "./auth";
+import {
+    Auth0Config,
+    authRouter,
+} from "./auth";
 import { homeRouter } from "./home";
 import { policyRouter } from "./policy";
 
@@ -14,10 +17,7 @@ export const exp = express();
 
 passport.use(new auth0.Strategy(
     {
-        domain: process.env.AUTH0_DOMAIN,
-        clientID: process.env.AUTH0_CLIENT_ID,
-        clientSecret: process.env.AUTH0_CLIENT_SECRET,
-        callbackURL: process.env.AUTH0_CALLBACK_URL || "http://localhost:3000/callback",
+        ...Auth0Config,
         state: false,
     },
     (accessToken, refreshToken, extraParams, profile, done) => {

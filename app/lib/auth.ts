@@ -1,14 +1,16 @@
 import * as express from "express";
 import * as passport from "passport";
+import { GitInfo } from "../index";
 import { database } from "./mongo";
 
-export const authRouter = express.Router();
+export const Auth0Config = {
+    domain: process.env.AUTH0_DOMAIN,
+    clientID: process.env.AUTH0_CLIENT_ID,
+    clientSecret: process.env.AUTH0_CLIENT_SECRET,
+    callbackURL: process.env.AUTH0_CALLBACK_URL || "http://localhost:3000/callback",
+};
 
-authRouter.get("/sign", passport.authenticate("auth0", {
-    scope: "openid email profile",
-}), (req, res) => {
-    res.redirect("/");
-});
+export const authRouter = express.Router();
 
 authRouter.get("/callback", (req, res, next) => {
     passport.authenticate("auth0", async (err, user, info) => {
@@ -26,6 +28,7 @@ authRouter.get("/callback", (req, res, next) => {
             ...user,
             ts: Date.now(),
             signed: true,
+            version: GitInfo.version,
         };
 
         try {
@@ -34,7 +37,7 @@ authRouter.get("/callback", (req, res, next) => {
                 await sigs.insertOne(sig);
                 req.flash("info", "Thank you for signing the Manifesto!");
             } else if (!result.signed) {
-                await sigs.update({ id: user.id }, { $set: { signed: true } });
+                await sigs.updateOne({ id: user.id }, { $set: { signed: true, version: GitInfo.version } });
                 req.flash("info", "Thank you for signing the Manifesto!");
             }
         } catch (err) {

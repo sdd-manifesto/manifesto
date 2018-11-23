@@ -1,11 +1,11 @@
 {{#each message}}
-    <div class="confirmation">{{this}}</div>
+<div class="confirmation">{{this}}</div>
 {{/each}}
 
 {{{html}}}
 
 {{#unless user}}
-<a href="/sign"><button class="button primary" id="sign_manifesto">Sign the Manifesto</button></a>
+<button class="button primary" id="sign_manifesto" onclick="lock.show();">Sign the Manifesto</button>
 {{/unless}}
 
 
@@ -25,4 +25,50 @@
     </ul>
 </div>
 
+{{#if auth0}}
+<!--[if IE 8]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script src="https://cdn.auth0.com/js/base64.js"></script>
+<script src="https://cdn.auth0.com/js/es5-shim.min.js"></script>
+<![endif]-->
+
+<script src="https://cdn.auth0.com/js/lock/11.3/lock.min.js"></script>
+<script>
+    var lock = new Auth0Lock("{{auth0.clientID}}", "{{auth0.domain}}", {
+        auth: {
+            redirectUrl: "{{auth0.callbackURL}}",
+            responseType: "code",
+            params: {
+                scope: "openid email profile",
+            },
+        },
+        theme: {
+            logo: 'https://sdd-manifesto.org/img/sdd_seal_150x150.jpg',
+            primaryColor: '#233173',
+            authButtons: {
+                "github": {
+                    displayName: "github to sign",
+                },
+                "google-oauth2": {
+                    displayName: "google to sign",
+                },
+                "twitter": {
+                    displayName: "twitter to sign",
+                }
+                ,
+                "linkedin": {
+                    displayName: "linkedin to sign",
+                }
+            }
+        },
+        languageDictionary: {
+            title: "Sign the Manifesto",
+        },
+        closable: true,
+    });
+</script>
+{{/if}}
 
