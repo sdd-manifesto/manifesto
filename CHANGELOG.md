@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/tree/HEAD)
 
+### Added
+
+-   Move login buttons to manifesto side. [#5](https://github.com/sdd-manifesto/manifesto/issues/5)
+
 ### Fixed
 
 -   Typo in 'observable':'debug' section. [#2](https://github.com/sdd-manifesto/manifesto/issues/2)
