@@ -38,6 +38,7 @@
 <script src="https://cdn.auth0.com/js/lock/11.3/lock.min.js"></script>
 <script>
     var lock = new Auth0Lock("{{auth0.clientID}}", "{{auth0.domain}}", {
+        configurationBaseUrl: "https://cdn.auth0.com",
         auth: {
             redirectUrl: "{{auth0.callbackURL}}",
             responseType: "code",
