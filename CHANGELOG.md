@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 -   Move login buttons to manifesto side. [#5](https://github.com/sdd-manifesto/manifesto/issues/5)
+-   Acknowledge prior art. [#6](https://github.com/sdd-manifesto/manifesto/issues/6)
 
 ### Fixed
 
