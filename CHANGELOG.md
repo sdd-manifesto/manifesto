@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.3...HEAD)
+## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.4...HEAD)
+
+## [0.9.4](https://github.com/sdd-manifesto/manifesto/compare/0.9.3...0.9.4) - 2018-11-24
 
 ### Fixed
 
