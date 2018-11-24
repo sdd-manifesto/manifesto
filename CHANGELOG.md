@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.3...HEAD)
 
+### Fixed
+
+-   Fix lookup of sha. [5a5b212](https://github.com/sdd-manifesto/manifesto/commit/5a5b212b97da2ff6ebf2ddcd7dfce48c3a1efbcc)
+
 ## [0.9.3](https://github.com/sdd-manifesto/manifesto/compare/0.9.2...0.9.3) - 2018-11-24
 
 ### Changed
