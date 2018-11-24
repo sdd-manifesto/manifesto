@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.9.2](https://github.com/sdd-manifesto/manifesto/compare/0.9.1...0.9.2) - 2018-11-24
 
+### Changed
+
+-   Use only major and minor for manifesto version. [ffd8587](https://github.com/sdd-manifesto/manifesto/commit/ffd8587e814026cbb9d01e4ed7d26e5641523e7d)
+
 ## [0.9.1](https://github.com/sdd-manifesto/manifesto/compare/0.9.0...0.9.1) - 2018-11-24
 
 ### Added 
