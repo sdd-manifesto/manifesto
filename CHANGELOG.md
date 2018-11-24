@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.2...HEAD)
 
+### Changed
+
+-   Shorter version display for mobile. [ddd22ae](https://github.com/sdd-manifesto/manifesto/commit/ddd22ae2c2e93d807decdaa5242d7debd49393ab)
+
 ## [0.9.2](https://github.com/sdd-manifesto/manifesto/compare/0.9.1...0.9.2) - 2018-11-24
 
 ### Changed
@@ -15,13 +19,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.9.1](https://github.com/sdd-manifesto/manifesto/compare/0.9.0...0.9.1) - 2018-11-24
 
-### Added 
+### Added
 
 -   Fix hint message for returning users. [41290b2](https://github.com/sdd-manifesto/manifesto/commit/41290b2894f295dbb2830b047b6d7d41b0d7aab7)
 
 ### Fixed
 
- -  Fix wrapping of avatar hovers. [8f8fcb2](https://github.com/sdd-manifesto/manifesto/commit/8f8fcb25342e25c150ad80b839322b221c97b0c4)
+-   Fix wrapping of avatar hovers. [8f8fcb2](https://github.com/sdd-manifesto/manifesto/commit/8f8fcb25342e25c150ad80b839322b221c97b0c4)
 
 ## [0.9.0](https://github.com/sdd-manifesto/manifesto/tree/0.9.0) - 2018-11-24
 
