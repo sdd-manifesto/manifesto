@@ -16,7 +16,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
         owner: "sdd-manifesto",
         repo: "manifesto",
     };
-    const sha = process.env.HEROKU_SLUG_COMMIT;
+    const sha = process.env.ATOMIST_SHA || process.env.HEROKU_SLUG_COMMIT;
     let version = sha.slice(0, 7);
 
     try {
@@ -35,7 +35,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
 
     try {
         const commit = await api.repos.getCommit({
-            sha: process.env.HEROKU_SLUG_COMMIT,
+            sha,
             ...repo,
         });
 
@@ -45,7 +45,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
         };
     } catch (err) {
         return {
-            version: "0000000",
+            version: "0.0",
             date: new Date().toISOString(),
         };
     }
