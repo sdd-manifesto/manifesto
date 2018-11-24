@@ -25,7 +25,7 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
             if (tag[1] === sha) {
                 const t = semver.parse(tag[0]);
                 if (t.prerelease.length === 0) {
-                    version = tag[0];
+                    version = `${t.major}.${t.minor}`;
                 }
             }
         }
