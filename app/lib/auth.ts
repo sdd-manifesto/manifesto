@@ -42,6 +42,8 @@ authRouter.get("/callback", (req, res, next) => {
             } else if (!result.signed) {
                 await sigs.updateOne({ id: user.id }, { $set: { signed: true, version: GitInfo.version } });
                 req.flash("info", "Thank you for signing the Manifesto!");
+            } else {
+                req.flash("info", "Thank you for coming back. You already signed the Manifesto.");
             }
         } catch (err) {
             console.error(err);
