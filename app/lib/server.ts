@@ -45,6 +45,13 @@ exp.use("/", express.static(path.join(__dirname, "..", "public")));
 exp.use(logger("dev"));
 exp.use(cookieParser());
 
+// tslint:disable-next-line:no-var-requires
+const MongoDBStore = require("connect-mongodb-session")(session);
+const store = new MongoDBStore({
+    uri: process.env.MONGODB_URI || "mongodb://localhost:27017/manifesto",
+    collection: "sessions",
+});
+
 const sess: any = {
     secret: process.env.SESSION_SECRET || "CHANGE THIS SECRET",
     resave: false,
@@ -52,8 +59,9 @@ const sess: any = {
     proxy: true, // add this when behind a reverse proxy, if you need secure cookies
     cookie: {
         sameSite: false,
-        maxAge: 1000 * 60 * 10,
+        maxAge: 1000 * 60 * 60 * 24 * 7,
     },
+    store,
 };
 
 if (process.env.NODE_ENV === "production") {
