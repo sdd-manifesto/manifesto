@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 -   Link to correct version of manifesto. [ad7db77](https://github.com/sdd-manifesto/manifesto/commit/ad7db77ef57894f41a45f3e5d848156d027bc940)
+-   Change session secret. [0a123e6](https://github.com/sdd-manifesto/manifesto/commit/0a123e65fc6443c6708c80ae3152aa84619d8354)
 
 ## [0.9.4](https://github.com/sdd-manifesto/manifesto/compare/0.9.3...0.9.4) - 2018-11-24
 
