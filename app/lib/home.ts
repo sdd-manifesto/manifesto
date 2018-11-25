@@ -27,12 +27,22 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
     const message = req.flash("info");
 
     const version = GitInfo.version;
+    const sha = GitInfo.sha;
     const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
     const state = nonce();
 
     req.session.state = state;
 
-    res.render("home", { profiles, count, html: manifesto, message, version, date, auth0: Auth0Config, state });
+    res.render("home", {
+        profiles,
+        count,
+        html: manifesto,
+        message,
+        version,
+        sha,
+        date,
+        auth0: Auth0Config,
+        state });
 });
 
 function nonce(length: number = 40): string {

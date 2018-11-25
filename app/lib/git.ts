@@ -5,7 +5,7 @@ import * as semver from "semver";
 /**
  * Load sha and commit date from repo to present on the UI
  */
-export async function gitInfo(): Promise<{ version: string, date: string }> {
+export async function gitInfo(): Promise<{ sha: string, version: string, date: string }> {
     const api = new GitHubApi();
     api.authenticate({
         type: "token",
@@ -40,11 +40,13 @@ export async function gitInfo(): Promise<{ version: string, date: string }> {
         });
 
         return {
+            sha,
             version,
             date: commit.data.commit.committer.date,
         };
     } catch (err) {
         return {
+            sha: "0000000",
             version: "0.0",
             date: new Date().toISOString(),
         };
