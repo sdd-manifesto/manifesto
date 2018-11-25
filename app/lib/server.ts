@@ -46,7 +46,7 @@ exp.use(logger("dev"));
 exp.use(cookieParser());
 
 const sess: any = {
-    secret: "CHANGE THIS SECRET",
+    secret: process.env.SESSION_SECRET || "CHANGE THIS SECRET",
     resave: false,
     saveUninitialized: true,
     proxy: true, // add this when behind a reverse proxy, if you need secure cookies
