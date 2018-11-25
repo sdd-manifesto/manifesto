@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.5...HEAD)
 
+### Added
+
+-   Add session store. [adc2c02](https://github.com/sdd-manifesto/manifesto/commit/adc2c02e9d847cc6a6b97d21fa26886212245bd4)
+
 ## [0.9.5](https://github.com/sdd-manifesto/manifesto/compare/0.9.4...0.9.5) - 2018-11-25
 
 ### Changed
