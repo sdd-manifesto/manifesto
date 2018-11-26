@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.8...HEAD)
 
+### Changed
+
+-   Show intial signatures without fade in. [2a7b737](https://github.com/sdd-manifesto/manifesto/commit/2a7b737c322cc11c09fb31a39decb3a687d8eccb)
+
 ## [0.9.8](https://github.com/sdd-manifesto/manifesto/compare/0.9.7...0.9.8) - 2018-11-26
 
 ### Added
