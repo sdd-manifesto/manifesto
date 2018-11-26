@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.6...HEAD)
 
+### Added
+
+-   Add full list of signatures. [6a50e57](https://github.com/sdd-manifesto/manifesto/commit/6a50e57024502003798cc8bbeb5d928d0e2a3e8b)
+
 ## [0.9.6](https://github.com/sdd-manifesto/manifesto/compare/0.9.5...0.9.6) - 2018-11-25
 
 ### Added
