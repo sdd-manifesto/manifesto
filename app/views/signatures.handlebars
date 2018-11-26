@@ -1,0 +1,61 @@
+{{count}} people already signed (Go back to the <a href="/">Manifesto</a>)
+
+<ul id="signatures" style="list-style: none">
+</ul>
+
+<button class="button primary" id="load_more">Load More</button>
+
+<p class="totop">
+    <a href="#top" id="top">Back to top</a>
+</p>
+
+<script>
+
+    let next = "api/signatures";
+
+    function loadNext() {
+
+        $.getJSON(next, function (data) {
+            const items = [];
+            $.each(data.signatures, function (key, val) {
+                items.push(`<li style="display: none">
+    <img src="${val.avatar}" class="list_avatar" />${val.name} <span class="list_ago">signed ${val.ago} via ${val.connection} - v${val.version}</span>
+</li>`);
+            });
+            if (data.meta && data.meta.next) {
+                next = data.meta.next;
+            }
+            $("#signatures").append(items);
+            $("li:hidden").slideDown();
+        });
+    }
+
+    $(function () {
+
+        loadNext(next);
+        $("#load_more").on('click', function (e) {
+            e.preventDefault();
+            loadNext();
+            $('html,body').animate({
+                scrollTop: $(this).offset().top - 25,
+            }, 1500);
+        });
+
+    });
+
+    $("#top").click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.totop a').fadeIn();
+        } else {
+            $('.totop a').fadeOut();
+        }
+    });
+
+</script>

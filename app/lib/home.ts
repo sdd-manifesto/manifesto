@@ -42,7 +42,27 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
         sha,
         date,
         auth0: Auth0Config,
-        state });
+        state,
+    });
+});
+
+homeRouter.get("/signatures.html", async (req: express.Request, res: express.Response) => {
+
+    const db = await database();
+    const sigs = db.collection("signatures");
+
+    const count = await sigs.countDocuments({ signed: true });
+
+    const version = GitInfo.version;
+    const sha = GitInfo.sha;
+    const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
+
+    res.render("signatures", {
+        version,
+        sha,
+        date,
+        count,
+    });
 });
 
 function nonce(length: number = 40): string {

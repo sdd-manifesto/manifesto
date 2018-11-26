@@ -6,6 +6,7 @@ import * as logger from "morgan";
 import * as passport from "passport";
 import * as auth0 from "passport-auth0";
 import * as path from "path";
+import { apiRouter } from "./api";
 import {
     Auth0Config,
     authRouter,
@@ -92,6 +93,8 @@ exp.use((req, res, next) => {
 exp.use("/", authRouter);
 exp.use("/", homeRouter);
 exp.use("/", policyRouter);
+exp.use("/", apiRouter);
+exp.disable("etag");
 
 exp.use((req, res, next) => {
     const err = new Error("Not Found");
