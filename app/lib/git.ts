@@ -34,15 +34,16 @@ export async function gitInfo(): Promise<{ sha: string, version: string, date: s
     }
 
     try {
-        const commit = await api.repos.getCommit({
-            sha,
+        const commit = await api.repos.listCommits({
             ...repo,
+            path: "README.md",
+            per_page: 1,
         });
 
         return {
             sha,
             version,
-            date: commit.data.commit.committer.date,
+            date: commit.data[0].commit.committer.date,
         };
     } catch (err) {
         return {
