@@ -99,7 +99,8 @@
     "lint": "tslint --config tslint.json --format verbose --project .",
     "lint:fix": "npm run lint -- --fix",
     "heroku-postbuild": "npm run build",
-    "start": "node app/index.js"
+    "start": "node app/index.js",
+    "watch:sass": "node-sass --watch app/sass/main.scss -o app/public/css"
   },
   "engines": {
     "node": ">=8.1.0",
