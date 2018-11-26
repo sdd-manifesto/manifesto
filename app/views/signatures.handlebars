@@ -24,6 +24,9 @@
             });
             if (data.meta && data.meta.next) {
                 next = data.meta.next;
+            } else {
+                next = undefined;
+                $("#load_more").fadeOut();
             }
             $("#signatures").append(items);
             $("li:hidden").slideDown();
