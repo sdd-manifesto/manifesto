@@ -14,6 +14,13 @@ const manifesto = converter.makeHtml(
 
 export const homeRouter = express.Router();
 
+homeRouter.use((req, res, next) => {
+    res.locals.version = GitInfo.version;
+    res.locals.sha = GitInfo.sha;
+    res.locals.date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
+    next();
+});
+
 homeRouter.get("/", async (req: express.Request, res: express.Response) => {
 
     const db = await database();
@@ -26,9 +33,6 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
     });
     const message = req.flash("info");
 
-    const version = GitInfo.version;
-    const sha = GitInfo.sha;
-    const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
     const state = nonce();
 
     req.session.state = state;
@@ -38,9 +42,6 @@ homeRouter.get("/", async (req: express.Request, res: express.Response) => {
         count,
         html: manifesto,
         message,
-        version,
-        sha,
-        date,
         auth0: Auth0Config,
         state,
     });
@@ -53,14 +54,7 @@ homeRouter.get("/signatures.html", async (req: express.Request, res: express.Res
 
     const count = await sigs.countDocuments({ signed: true });
 
-    const version = GitInfo.version;
-    const sha = GitInfo.sha;
-    const date = dateFormat(new Date(GitInfo.date), "mmmm d, yyyy");
-
     res.render("signatures", {
-        version,
-        sha,
-        date,
         count,
     });
 });
