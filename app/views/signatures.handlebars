@@ -22,14 +22,20 @@
     <img src="${val.avatar}" class="list_avatar" />${val.name} <span class="list_ago">signed ${val.ago} via ${val.connection} - v${val.version}</span>
 </li>`);
             });
+            $("#signatures").append(items);
+
+            if (next === "api/signatures") {
+                $("li:hidden").show();
+            } else {
+                $("li:hidden").slideDown();
+            }
+
             if (data.meta && data.meta.next) {
                 next = data.meta.next;
             } else {
                 next = undefined;
                 $("#load_more").fadeOut();
             }
-            $("#signatures").append(items);
-            $("li:hidden").slideDown();
         });
     }
 
