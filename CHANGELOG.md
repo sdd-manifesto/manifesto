@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.7...HEAD)
 
+### Added
+
+-   Remove load more button when all entries got loaded. [6b084bc](https://github.com/sdd-manifesto/manifesto/commit/6b084bc97d1cd89c365ba08e64649ee5e4433817)
+
 ## [0.9.7](https://github.com/sdd-manifesto/manifesto/compare/0.9.6...0.9.7) - 2018-11-26
 
 ### Added
