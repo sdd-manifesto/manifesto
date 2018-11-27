@@ -34,6 +34,9 @@ passport.deserializeUser((user, done) => {
     done(undefined, user);
 });
 
+// tslint:disable-next-line:no-var-requires
+exp.use(require("helmet")());
+
 exp.set("view engine", "handlebars");
 exp.set("views", path.join(__dirname, "..", "views"));
 exp.engine("handlebars", exphbs({
@@ -69,8 +72,6 @@ if (process.env.NODE_ENV === "production") {
     sess.cookie.secure = true;
 }
 
-// tslint:disable-next-line:no-var-requires
-exp.use(require("helmet")());
 exp.use(session(sess));
 
 exp.use(passport.initialize());
