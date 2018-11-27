@@ -20,7 +20,8 @@
     "SDD",
     "automation",
     "CI",
-    "CD"
+    "CD",
+    "manifesto"
   ],
   "main": "app/index.js",
   "dependencies": {
