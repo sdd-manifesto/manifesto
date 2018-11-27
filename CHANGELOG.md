@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 -   Fix copyright in footer. [544a5e1](https://github.com/sdd-manifesto/manifesto/commit/544a5e1fe40ac9155df628070dc12497af4c7a16)
+-   Move helmet up to earlier in the middleware pipeline. [5dacdb0](https://github.com/sdd-manifesto/manifesto/commit/5dacdb05570d33d3bf87c948b2d58faffb9c1eb9)
 
 ## [0.9.10](https://github.com/sdd-manifesto/manifesto/compare/0.9.9...0.9.10) - 2018-11-27
 
