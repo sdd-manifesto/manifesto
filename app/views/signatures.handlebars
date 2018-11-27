@@ -1,12 +1,12 @@
-{{count}} people already signed (Go back to the <a href="/">Manifesto</a>)
+<p>{{count}} people already signed (Go back to the <a href="/">Manifesto</a>)</p>
 
-<ul id="signatures" style="list-style: none">
+<ul id="signatures">
 </ul>
 
 <button class="button primary" id="load_more">Load More</button>
 
 <p class="totop">
-    <a href="#top" id="top">Back to top</a>
+    <a href="#top" id="top">&uarr; Back to top</a>
 </p>
 
 <script>
@@ -19,7 +19,7 @@
             const items = [];
             $.each(data.signatures, function (key, val) {
                 items.push(`<li style="display: none">
-    <img src="${val.avatar}" class="list_avatar" />${val.name} <span class="list_ago">signed ${val.ago} via ${val.connection} - v${val.version}</span>
+    <img src="${val.avatar}" class="list-avatar" /><div class="signer-name">${val.name}</div> <div class="list-ago">signed ${val.ago} via ${val.connection} - v${val.version}</div>
 </li>`);
             });
             $("#signatures").append(items);
