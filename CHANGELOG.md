@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.9...HEAD)
 
+### Changed
+
+-   Use globals for version and last updated date. [2ce0bc9](https://github.com/sdd-manifesto/manifesto/commit/2ce0bc97be4c9283bd0c8b54f14d241cd6f062b9)
+
 ## [0.9.9](https://github.com/sdd-manifesto/manifesto/compare/0.9.8...0.9.9) - 2018-11-26
 
 ### Changed
