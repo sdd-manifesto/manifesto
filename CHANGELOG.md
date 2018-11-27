@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 -   Use globals for version and last updated date. [2ce0bc9](https://github.com/sdd-manifesto/manifesto/commit/2ce0bc97be4c9283bd0c8b54f14d241cd6f062b9)
 -   Retrieve last updated date from commits to README.md only. [8989124](https://github.com/sdd-manifesto/manifesto/commit/89891249e1c043a43ec35e5de3f6204a0d6827f3)
+-   CSS updates for signature list page. [#7](https://github.com/sdd-manifesto/manifesto/issues/7)
 
 ### Fixed
 
