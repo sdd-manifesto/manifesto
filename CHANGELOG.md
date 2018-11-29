@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.12...HEAD)
 
+### Fixed
+
+-   Fix broken markup. [987ad10](https://github.com/sdd-manifesto/manifesto/commit/987ad10ef1da41db6b20308e1e68468fa669ccec)
+
 ## [0.9.12](https://github.com/sdd-manifesto/manifesto/compare/0.9.11...0.9.12) - 2018-11-29
 
 ### Removed
