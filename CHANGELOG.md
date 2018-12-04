@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.13...HEAD)
 
+### Removed
+
+-   Moved manifesto app to separate repository. [9c3a0bc](https://github.com/sdd-manifesto/manifesto/commit/9c3a0bcf6bb8ea205ac1042e41017266e853660f)
+
 ## [0.9.13](https://github.com/sdd-manifesto/manifesto/compare/0.9.12...0.9.13) - 2018-11-23
 
 ### Added
