@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/sdd-manifesto/manifesto/compare/0.9.14...HEAD)
 
+### Removed
+
+-   Remove legal files. [e18d102](https://github.com/sdd-manifesto/manifesto/commit/e18d102caa3442c2f904ee3b0e47b10456404f78)
+
 ## [0.9.14](https://github.com/sdd-manifesto/manifesto/compare/0.9.13...0.9.14) - 2018-12-04
 
 ### Removed
