@@ -26,7 +26,7 @@ Delivery infrastructure is now programmable, and we will program it.
 -   **Modern programming languages:** Logic is best specified in code, not pictures or GUIs. Scripts don’t scale.
 -   **Model-based:** Backed by a model of the software domain, with understanding of code.
 -   **Testable:** Enabling short trips to spot errors before production.
--   **Progressive:** Separates code deployment from feature release to deliver changes quickly and safely to the correct audience.
+-   **Progressive:** Facilitates deployment at any time. With controlled, selective rollout of changes to audiences and environments. Allowing release to be gradual and deliberate.
 
 **Collaborative:** 
 -	**Among people:** Each person can express their expertise in code for everyone’s benefit.
