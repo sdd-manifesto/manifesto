@@ -1,6 +1,6 @@
 # The Software Defined Delivery Manifesto
 
-Languages: [简体中文](/REAME_zh-cn.md)
+Languages: [简体中文](REAME_zh-cn.md)
 
 We recognize that delivering useful software shapes our world. We recognize that code is the best way to specify precise action. We recognize that code is only useful when we deliver it.
 
