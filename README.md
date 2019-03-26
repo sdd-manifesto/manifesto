@@ -1,7 +1,5 @@
 # The Software Defined Delivery Manifesto
 
-Languages: [简体中文](README_zh-cn.md)
-
 We recognize that delivering useful software shapes our world. We recognize that code is the best way to specify precise action. We recognize that code is only useful when we deliver it.
 
 Delivery is not a detail, it is our job. Now is the time to apply our core skills to our own work. Now is the time to *engineer* our delivery. We divide our work between ourselves and computers: humans for decisions, and automation for tasks.
