@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.10.0](https://github.com/sdd-manifesto/manifesto/compare/0.9.15...0.10.0) - 2019-01-04
 
+### Changed
+
+-    Bump version to 0.10.0
+
 ## [0.9.15](https://github.com/sdd-manifesto/manifesto/compare/0.9.14...0.9.15) - 2019-01-04
 
 ### Removed
