@@ -49,4 +49,4 @@
 
 **作者：**（按照姓名首字母排序）Kenny Bastani, Marc Holmes, Rod Johnson, Jessica Kerr, Mik Kersten, Russ Miles, Erin Schnabel, Matt Stine. 以及社区成员的帮助和整理。
 
-© 2018 版权归以上作者所有，本声明可以通过任何形式自由复制, 但只能通过本文进行全文复制。
+© 2019, 版权归以上作者所有，本声明可以通过任何形式自由复制, 但只能通过本文进行全文复制。
