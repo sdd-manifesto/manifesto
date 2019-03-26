@@ -44,6 +44,6 @@ Delivery infrastructure is now programmable, and we will program it.
 
 **Authors:** (alphabetical by last name): Kenny Bastani, Marc Holmes, Rod Johnson, Jessica Kerr, Mik Kersten, Russ Miles, Erin Schnabel, Matt Stine. With the help and refinement of many members in the community.
 
-© 2018, the above authors, this declaration may be freely copied in any form, but only in its entirety through this notice.
+© 2019, the above authors, this declaration may be freely copied in any form, but only in its entirety through this notice.
 
 
