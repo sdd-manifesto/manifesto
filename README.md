@@ -37,7 +37,7 @@ Delivery infrastructure is now programmable, and we will program it.
 - **Through automation:** We automate repeated tasks to speed our work and avoid errors.
 - **Through reuse:** Common functionality is shared between developers, teams, and organizations.
 
-**Observable:** Common means to observe and troubleshoot  what happens in the delivery process as a production system.
+**Observable:** We require common means to observe and troubleshoot what happens in the delivery process as a production system.
 -   **Trace:** Observe activity in a system and trace the relationships between actions.
 -   **Debug:** Interact with and inspect a delivery flow.
 -   **Metrics:** Derive metrics from activity across the entire delivery flow.
